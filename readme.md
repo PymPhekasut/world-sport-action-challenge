@@ -1,7 +1,7 @@
 
 ## ER diagram: 
 
-![alt text](./img/divisions.PNG)
+![alt text](./divisions.PNG)
 
 Explanation:
 
@@ -14,7 +14,7 @@ Explanation:
 ## MySQL and functions
 ### 1. EnabledBorrowDivision
    
-![alt text](./img/disableBorrow.PNG)
+![alt text](./disableBorrow.PNG)
 I create function called `enabledBorrowDivision()` that can apply to all divisions, no borrowing. I can loop for each divisionID to update it and we can handle with the UI if user selects `ALL` option it can run query to collect divisionID to push into an array then loop with this function.
 
 ```Sql
@@ -67,11 +67,11 @@ I decide to encapsulate all features in `updateDivisions()` function as array of
 ```
 
 
-![alt text](./img/borrowingRules.PNG)
+![alt text](./borrowingRules.PNG)
 
 
 ### 3.updateFinalesEligibility
-![alt text](./img/finalEligible.png)
+![alt text](./finalEligible.png)
 It's similar logic to `updateDivisions()` I decide to encapsulate all features in `updateFinalesEligibility()` function as array of request body (look like below). Also I can loop for each divisionID to update it and we can handle with the UI if user selects `ALL` option it can run query to collect divisionID to push into an array then loop with this function.
 ```typescript
 [
